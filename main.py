@@ -1,10 +1,10 @@
-__version__ = "1"
+__version__ = "1.0.1"
 from flask import Flask, render_template, request
 import urllib3
 import json
 import os
 import random
-app = Flask("NEWxkcd")
+app = Flask("XKmodern")
 http = urllib3.PoolManager()
 
 def clean():
