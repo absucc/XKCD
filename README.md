@@ -4,4 +4,4 @@
 - Edit the document the final lines of [main.py](main.py)
 - Start
 ## Visit
-- You can visit this project via Repl.it -> https://xkcd.l64.repl.co
+- You can visit this project via Repl.it -> https://xkcd.l64.repl.co (Webpage)/[@L64/XKCD](https://repl.it/@L64/XKCD) (Repl)
