@@ -1,4 +1,4 @@
-# ![XKmodern](static/img/xkmodern.png | width=100 height=auto)
+# ![XKmodern](static/img/xkmodern.png | width=100)
 Read XKCD in a webapp
 ## Install
 - Install the requirements (via requirements.txt (`pip install -r requirements.txt`) or via [Poetry](https://python-poetry.org) (`python -m poetry install`))
