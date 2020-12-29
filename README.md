@@ -1,7 +1,11 @@
 # XKmodern
 Read XKCD in a webapp
 ## Install
-- Install the requirements (via requirements.txt (`pip install -r requirements.txt`) or via [Poetry](https://python-poetry.org) (`python -m poetry install`))
+- Install the requirements
+  - Via requirements.txt
+    - `pip install -r requirements.txt`
+  - Via [Poetry](https://python-poetry.org)
+    - `python -m poetry lock` + `python -m poetry install`
 - Edit the document the final lines of [main.py](main.py)
 - Start
 ## Visit
