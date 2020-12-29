@@ -1,0 +1,17 @@
+{ 
+    "name":"XKmodern", 
+    "short_name":"XKmodern", 
+    "start_url":"/", 
+    "display":"standalone", 
+    "background_color":"#96A8C8", 
+    "theme_color":"white", 
+    "scope": ".", 
+    "description":"Read XKCD in a webapp", 
+    "icons":[ 
+    {
+      "src":"img/favicon.png",
+      "sizes":"100x100", 
+      "type":"image/png"
+    }
+  ] 
+}

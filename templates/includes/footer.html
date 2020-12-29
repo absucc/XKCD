@@ -1,0 +1,25 @@
+		<footer>
+			“<a href="https://xkcd.com">XKCD</a>” by <a href="https://xkcd.com/about/">Randall Munroe</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC BY-NC 2.5</a><br>
+			Front-end by <a href="https://lucas.codeberg.page">absucc</a> - Powered by <a href="https://xkcd.com/json.html">XKCD's JSON interface</a> - <a href="https://github.com/absucc/XKCD">Source code</a><br>
+			<b>I'm not associated with <a href="https://xkcd.com/about/">Randall Munroe</a>, so this website is totally unofficial</b>
+		</footer>
+	</body>
+	<script src="{{ url_for('static', filename='js/bootstrap/bootstrap.bundle.min.js') }}"></script>
+	<script> 
+		window.addEventListener('load', () => { 
+			registerSW(); 
+		});
+		async function registerSW() { 
+			if ('serviceWorker' in navigator) { 
+				try { 
+					await navigator 
+					.serviceWorker 
+					.register('static/js/sw.js'); 
+				} 
+				catch (e) { 
+					console.log('SW registration failed'); 
+				} 
+			} 
+		} 
+	</script>
+</html>

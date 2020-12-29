@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta chardset="UTF-8">
+		<meta name="author" content="absucc">
+		<meta name="application-name" content="XKmodern">
+		<meta name="keywords" content="xkcd,Alternative front-end,front-end,webapp">
+		<meta name="description" content="APIcord is a line of simple bots powered by simple APIs">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Comapatible" content="id=edge">
+		<link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}" type="image/png">
+		<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="https://xkcd.com/atom.xml">
+		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://xkcd.com/rss.xml">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+		<title>{{booktitle}}XKmodern</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="/">
+						<!--<span style="color: #96A8C8;" width="auto" height="24">NEW</span>--><img src="{{ url_for('static', filename='img/xkmodern.png') }}" alt="XKmodern" width="auto" height="24">
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<!--<li class="nav-item">
+								<span class="nav-link"><a href="https://xkcd.com">XKCD</a> &sdot;	 <a href="https://lucas.codeberg.page">Absucc</a></span>
+							</li> -->
+						</ul>
+						<form class="d-flex" method="GET">
+							<div class="input-group">
+								<span class="input-group-text" id="basic-addon1">#</span>
+								<input class="form-control me-2" type="number" placeholder="{{numcomic}}" aria-label="Search" aria-describedby="basic-addon1" name="num">
+							</div>
+							<button class="btn btn-outline-success" type="submit">Read</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</header>

@@ -1,0 +1,76 @@
+@import url('bootstrap/bootstrap.min.css');
+@import url('redefault.min.css');
+@import url('https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css');
+body {
+  text-align: center;
+  background: #96A8C8;
+  color: black;
+}
+.navbar-brand {
+  color: #96A8C8;
+  font-family: monospace;
+  font-weight: bold;
+}
+.navbar-brand a:link{text-decoration: none;}.navbar-brand a:visited{text-decoration: none;}.navbar-brand a:hover{text-decoration: none;}.navbar-brand a:active{text-decoration: none;}
+
+/* Links */
+a:link {
+  color: #8c9dbb;
+  text-decoration: none;
+}
+a:visited {
+  color: #8c9dbb;
+  text-decoration: none;
+}
+a:hover {
+  color: #8c9dbb;
+  text-decoration: underline;
+}
+a:active {
+  color: #8c9dbb;
+  text-decoration: underline;
+}
+/* Original color: #96a8c8 */
+
+/* Header */
+header a:link {
+  color: #797979;
+  text-decoration: none;
+}
+header a:visited {
+  color: #797979;
+  text-decoration: none;
+}
+header a:hover {
+  color: #4c4c4c;
+  text-decoration: underline;
+}
+header a:active {
+  color: #4c4c4c;
+  text-decoration: underline;
+}
+
+main {padding: 2%;}
+#options{margin: 5px 0;}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 5px;
+  font-size: 105%;
+}
+main, footer, .pre {
+  margin: 2%;
+  border-radius: 10px;
+  background: white;
+}
+#comic {
+  width: auto;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  #comic {
+    width: 320px;
+    height: auto;
+  }
+}
