@@ -1,6 +1,6 @@
 # XKmodern
 ## Install
-- Install the requirements (via requirements.txt (`pip install -r requirements.txt`) or via [Poetry](https://python-poetry.org))
+- Install the requirements (via requirements.txt (`pip install -r requirements.txt`) or via [Poetry](https://python-poetry.org) (`python -m poetry install`))
 - Edit the document the final lines of [main.py](main.py)
 - Start
 ## Visit
