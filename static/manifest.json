@@ -9,7 +9,7 @@
     "description":"Read XKCD in a webapp", 
     "icons":[ 
     {
-      "src":"img/favicon.png",
+      "src":"img/newfavicon.png",
       "sizes":"100x100", 
       "type":"image/png"
     }
