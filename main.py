@@ -1,4 +1,4 @@
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 from flask import Flask, render_template, request
 import urllib3
 import json
