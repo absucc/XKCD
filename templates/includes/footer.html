@@ -5,21 +5,4 @@
 		</footer>
 	</body>
 	<script src="{{ url_for('static', filename='js/bootstrap/bootstrap.bundle.min.js') }}"></script>
-	<script> 
-		window.addEventListener('load', () => { 
-			registerSW(); 
-		});
-		async function registerSW() { 
-			if ('serviceWorker' in navigator) { 
-				try { 
-					await navigator 
-					.serviceWorker 
-					.register('static/js/sw.js'); 
-				} 
-				catch (e) { 
-					console.log('SW registration failed'); 
-				} 
-			} 
-		} 
-	</script>
 </html>
