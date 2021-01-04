@@ -1,4 +1,4 @@
-# XKmodern
+# XKmodern [![Run on Repl.it](https://repl.it/badge/github/absucc/XKmodern)](https://repl.it/github/absucc/XKmodern)
 Read XKCD in a webapp
 ## Install
 - Install the requirements
