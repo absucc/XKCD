@@ -16,6 +16,7 @@ Read XKCD in a webapp
 ### Libraries
 - [Bootstrap](https://getbootstrap.com)
 - [Flask](https://palletsprojects.com/p/flask)
+- [Likely](https://ilyabirman.net/projects/likely)
 ### Technologies
 - [Python®](https://python.org)
 - [HTML5](https://html.spec.whatwg.org)
