@@ -1,6 +1,7 @@
-@import url('bootstrap/bootstrap.min.css');
-@import url('redefault.min.css');
-@import url('https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css');
+@import url("bootstrap/bootstrap.min.css");
+@import url("redefault.min.css");
+@import url("likely.css");
+@import url("https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css");
 body {
   text-align: center;
   background: #96A8C8;
@@ -68,9 +69,76 @@ main, footer, .pre {
   width: auto;
   height: auto;
 }
+/* Tablet */
+@media only screen and (max-width: 992px) {
+  #comic {
+    width: 540px;
+    height: auto;
+  }
+  .mobile {
+    display: default;
+  }
+  .desktop {
+    display: none;
+  }
+}
+/* Mobile */
 @media only screen and (max-width: 600px) {
   #comic {
     width: 320px;
     height: auto;
   }
+}
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  /*main {
+    background: transparent;
+  }
+  td {
+    margin: 2%;
+    /*border: solid 1%;
+    border-radius: 10px;
+    background: white;
+  } */
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: default;
+  }
+  .comic_table {
+    width: 80%;
+  }
+  /*.comic_table {
+    float: right;
+  }
+  .comic_data_table {
+    text-align: left;
+  }*/
+}
+table {width: 100%;}
+/* .desktop td {
+  border-color: blue;
+  border-style: none none none solid;
+} */
+
+/* Share buttons */
+.share a:link {
+  color: white;
+  text-decoration: none;
+}
+.share a:visited {
+  color: white;
+  text-decoration: none;
+}
+.share a:hover {
+  color: white;
+  text-decoration: none;
+}
+.share a:active {
+  color: white;
+  text-decoration: none;
+}
+.share {
+  color: white;
 }

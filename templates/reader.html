@@ -1,19 +1,39 @@
 {% include "includes/header.html" %}
 		<main>
-			<h2><b>{{title}}</b> (#{{thiscomic}})</h2>
+			<table>
+				<tr>
+					<td class="comic_table">
+						<h2><b>{{title}}</b> (#{{thiscomic}})</h2>
 {% include "includes/buttons.html" %}
-			<img id="comic" src="{{comic}}" alt="{{alt}}">
-			<!--<p>
-				Embed this: https://xkcd.com/numcomic (xkcd.com)/numcomic (NEWxkcd)
-			</p>-->
+						<a href="{{comic}}"><img id="comic" src="{{comic}}" alt="{{alt}}"></a>
+						<!--<p>
+							Embed this: https://xkcd.com/numcomic (xkcd.com)/numcomic (NEWxkcd)
+						</p>-->
 {% include "includes/buttons.html" %}
-			<br>
+					</td>
+					<td class="comic_data_table desktop">
+						<p>
+							<a href="https://www.explainxkcd.com/{{thiscomic}}"><button class="btn btn-outline-primary">Explain XKCD</button></a><br>
+							<b>Date:</b> {{thedate}}<br>
+							<b>Permanent URL:</b> https://xkcd.l64.repl.co/?num={{thiscomic}}<br>
+							<b>XKCD URL:</b> https://xkcd.com/{{thiscomic}}/<br>
+							<b>Image URL:</b> {{comic}}
+{% include "includes/sharethis.html" %}
+						</p>
+					</td>
+				</tr>
+			</table>
+			<div class="mobile">
+				<br>
 				<!--<b>Permanent URL:</b> https://xkcd.l64.repl.co/?num={{thiscomic}}-->
-			<p>
-				<b>Date:</b> {{thedate}}<br>
-				<b>Permanent URL:</b> https://xkcd.l64.repl.co/?num={{thiscomic}}<br>
-				<b>XKCD URL:</b> https://xkcd.com/{{thiscomic}}/<br>
-				<b>Image URL:</b> {{comic}}
-			</p>
+				<p>
+					<a href="https://www.explainxkcd.com/wiki/index.php/{{thiscomic}}"><button class="btn btn-outline-primary">Explain XKCD</button></a><br>
+					<b>Date:</b> {{thedate}}<br>
+					<b>Permanent URL:</b> {{urlbase}}?num={{thiscomic}}<br>
+					<b>XKCD URL:</b> https://xkcd.com/{{thiscomic}}/<br>
+					<b>Image URL:</b> {{comic}}
+				</p>
+{% include "includes/sharethis.html" %}
+			</div>
 		</main>
 {% include "includes/footer.html" %}
