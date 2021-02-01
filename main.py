@@ -1,4 +1,4 @@
-__version__ = "1.1"
+__version__ = "1.2"
 from flask import Flask, render_template, request
 import urllib3
 import json
@@ -33,7 +33,9 @@ def xkcdreader():
         last="?num=" + str(last_plus)
       if jsdata["num"] == 1: back="1#"
       else: back=jsdata["num"] - 1
-      return render_template("reader.html", **locals(), numcomic=str(lccode["num"]), comic=jsdata["img"], title=jsdata["title"], booktitle=jsdata["title"] + " | ", not_the_last=back, its_the_last=last, alt=jsdata["alt"], thiscomic=str(jsdata["num"]), thedate=jsdata["month"]+"/"+jsdata["day"]+"/"+jsdata["year"], urlbase=request.base_url, ogurl=request.base_url + "?num=" + str(jsdata["num"]), random_num=str(random.randint(1, lccode["num"])))
+      if jsdata["num"] == 1608: fimage = "No image"
+      else: fimage = jsdata["img"]
+      return render_template("reader.html", **locals(), numcomic=str(lccode["num"]), comic=fimage, title=jsdata["title"], booktitle=jsdata["title"] + " | ", not_the_last=back, its_the_last=last, alt=jsdata["alt"], thiscomic=str(jsdata["num"]), thedate=jsdata["month"]+"/"+jsdata["day"]+"/"+jsdata["year"], urlbase=request.base_url, ogurl=request.base_url + "?num=" + str(jsdata["num"]), random_num=str(random.randint(1, lccode["num"])))
     else:
       clean()
       #return render_template("reader.html", **locals(), numcomic=str(lccode["num"]), title=lccode["title"], comic=lccode["img"], booktitle="", not_the_last=lccode["num"] - 1, its_the_last="#", alt=lccode["alt"], thiscomic=str(lccode["num"]), thedate=lccode["month"]+"/"+lccode["day"]+"/"+lccode["year"], urlbase=request.base_url, ogurl=request.base_url)
