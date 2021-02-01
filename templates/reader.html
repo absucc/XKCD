@@ -5,7 +5,23 @@
 					<td class="comic_table">
 						<h2><b>{{title}}</b> (#{{thiscomic}})</h2>
 {% include "includes/buttons.html" %}
-						<a href="{{comic}}"><img id="comic" src="{{comic}}" alt="{{alt}}"></a>
+
+						<div id="comic_section">
+              <a href="{{comic}}"><img id="comic" src="{{comic}}" alt="{{alt}}"></a>
+            </div>
+						<script>
+							var thiscomic = {{thiscomic}};
+							if (thiscomic == 1608) {
+								document.getElementById("comic_section").innerHTML = `<div class="desktop">
+										<iframe width="770px" height="700px" src="https://m.xkcd.com/1608/#explore" title="Game">
+											<div class="alert alert-warning" role="alert">
+												Your web browser is not compatible with the tag <code><iframe></code>, please try to enter here to play the game: <a href="https://xkcd.com/1608/"></a>
+											</div>
+										</iframe>
+								</div>
+								<div class="mobile"><h3>Sorry, but this game is exclusive for desktop computers</h3></div>`;
+							}
+						</script>
 						<!--<p>
 							Embed this: https://xkcd.com/numcomic (xkcd.com)/numcomic (NEWxkcd)
 						</p>-->
