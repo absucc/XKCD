@@ -8,15 +8,23 @@
 		<meta name="description" content="{{alt}}">
 		<meta property="og:title" content="{{title}} (#{{thiscomic}})">
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="{{ogurl}}">
+		<meta property="og:url" content="{{urlbase}}">
 		<meta property="og:image" content="{{comic}}">
+		<meta property="twitter:description" content="{{alt}}">
+		<meta property="twitter:card" content="summary">
+		<meta property="twitter:url" content="{{urlbase}}">
+		<meta property="twitter:title" content="{{title}} (#{{thiscomic}})">
+		<meta property="twitter:image" content="{{comic}}">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Comapatible" content="id=edge">
+
 		<link rel="icon" href="{{ url_for('static', filename='img/newfavicon.png') }}" type="image/png">
 		<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="https://xkcd.com/atom.xml">
 		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://xkcd.com/rss.xml">
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 		<link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+
 		<title>{{booktitle}}XKmodern</title>
 	</head>
 	<body>
@@ -24,7 +32,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white">
 				<div class="container-fluid">
 					<!-- <a class="navbar-brand" href="/">
-						<span style="color: #96A8C8;" width="auto" height="24">NEW</span>--><img src="{{ url_for('static', filename='img/xkmodern.png') }}" alt="XKmodern" width="auto" height="24">
+					<span style="color: #96A8C8;" width="auto" height="24">NEW</span>--><img src="{{ url_for('static', filename='img/xkmodern.png') }}" alt="XKmodern" width="auto" height="24">
 					<!-- </a> -->
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -38,12 +46,12 @@
 								<a href="https://github.com/absucc/XKmodern/blob/main/README.md">README.md</a>
 							</li> -->
 						</ul>
-						<form class="d-flex" method="GET">
+						<form class="d-flex" action="{{search_action}}" method="GET">
 							<div class="input-group">
 								<span class="input-group-text" id="basic-addon1">#</span>
 								<input class="form-control me-2" type="number" placeholder="{{random_num}}" aria-label="Search" aria-describedby="basic-addon1" name="num">
 							</div>
-							<button class="btn btn-outline-success" type="submit">Read</button>
+							<button class="btn btn-outline-success" type="submit"><i class="bi bi-book"></i></button>
 						</form>
 					</div>
 				</div>

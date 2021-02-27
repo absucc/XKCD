@@ -31,10 +31,10 @@
 						<p>
 							<a href="https://www.explainxkcd.com/{{thiscomic}}"><button class="btn btn-outline-primary">Explain XKCD</button></a><br>
 							<b>Date:</b> {{thedate}}<br>
-							<b>Permanent URL:</b> https://xkcd.l64.repl.co/?num={{thiscomic}}<br>
+							<b>Permanent URL:</b> {{urlbase}}<br>
 							<b>XKCD URL:</b> https://xkcd.com/{{thiscomic}}/<br>
 							<b>Image URL:</b> {{comic}}
-{% include "includes/sharethis.html" %}
+							{% include "includes/sharethis.html" %}
 						</p>
 					</td>
 				</tr>
@@ -45,11 +45,12 @@
 				<p>
 					<a href="https://www.explainxkcd.com/wiki/index.php/{{thiscomic}}"><button class="btn btn-outline-primary">Explain XKCD</button></a><br>
 					<b>Date:</b> {{thedate}}<br>
-					<b>Permanent URL:</b> {{urlbase}}?num={{thiscomic}}<br>
+					<b>Permanent URL:</b> {{urlbase}}<br>
 					<b>XKCD URL:</b> https://xkcd.com/{{thiscomic}}/<br>
 					<b>Image URL:</b> {{comic}}
 				</p>
-{% include "includes/sharethis.html" %}
+				{% include "includes/sharethis.html" %}
 			</div>
+      <div><br><hr><script src="https://utteranc.es/client.js" repo="{{utes_repo}}" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script></div>
 		</main>
 {% include "includes/footer.html" %}
