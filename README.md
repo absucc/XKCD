@@ -10,7 +10,7 @@ Read XKCD in a webapp
 3. Edit the document the final lines of [main.py](main.py)
 4. Start
 ## Visit
-- You can visit this project via Repl.it -> https://xkcd.absucc.rf.gd (Webpage)/[L64/XKCD](https://repl.it/@L64/xkcd) (Repl)
+- You can visit this project via Repl.it -> https://xkcd.absucc.rf.gd (Webpage)/[L64/xkcd](https://repl.it/@L64/xkcd) (Repl)
 ## Technologies and APIs used in this project
 ### APIs
 - [XKCD's JSON interface](https://xkcd.com/json.html)
