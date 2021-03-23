@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "XKmodern"
-version = "2.1"
+version = "2.1.1"
 description = "Read XKCD in a webapp"
 authors = ["Absucc"]
 
