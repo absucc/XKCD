@@ -4,7 +4,7 @@ host = "0.0.0.0"
 port = "8080"
 
 
-__version__ = "2.1"
+__version__ = "2.1.1"
 from flask import Flask, render_template, request
 import urllib3
 import json
@@ -41,7 +41,7 @@ def numreal(num):
     @app.errorhandler(500)
     def err5002(error):
       clean()
-      return render_template("error.html", **locals(), numcomic=str(lccode["num"]),  booktitle="This comic wasn't found"),500
+      return render_template("error.html", **locals(), numcomic=str(lccode["num"]), random_num=str(random.randint(1, lccode["num"])), booktitle="This comic wasn't found"),500
     clean()
     jdat = http.request("GET", "https://xkcd.com/" + numberz + "/info.0.json")
     jsdata = json.loads(jdat.data.decode("utf-8"))
