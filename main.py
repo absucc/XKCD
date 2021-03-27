@@ -1,7 +1,7 @@
 # Settings
 utterances_repo = "absucc/c-xkcd"
 host = "localhost"
-port = "8080"
+port = "80"
 
 
 __version__ = "2.1.1"
